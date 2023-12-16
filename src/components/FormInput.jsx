@@ -64,6 +64,7 @@ const FormInput = ({ onSubmit, testTypes, onCreate }) => {
                 <div className='form-ele'>
                     <label htmlFor='testType'>Test Type: </label>
                     <select id='testType' name='testType' value={formData.testType} onChange={handleChange}>
+                        <option>Select Test</option>
                         {testTypes.map((item, i) => {
                             return <option key={i} value={item}>{item}</option>
                         })}
